@@ -1,8 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+//@ts-ignore: Remote
+import Header from 'header/Header';
+import './index.css';
 
-import "./index.css";
+const App = () => (
+  <div>
+    <Header />
+    I'm the consumer app
+  </div>
+);
 
-const App = () => <div>Hi there, I'm React from Webpack 5.</div>;
-
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById('app'));
